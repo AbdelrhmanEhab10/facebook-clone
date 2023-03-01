@@ -1,0 +1,193 @@
+.facebook__signup-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 7px 0px;
+}
+
+.facebook__signup-header_content {
+  align-self: flex-start;
+}
+
+.facebook__signup-header_content h2 {
+  font-size: 36px;
+}
+
+.facebook__signup-header_content p {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+}
+
+.facebook__close {
+  align-self: flex-end;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.facebook__signup-form_input {
+  width: 370px;
+  height: 22px;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px 16px;
+}
+
+.facebook__signup-form_username {
+  display: flex;
+  gap: 10px;
+}
+
+.facebook__signup-form_username input {
+  width: 164px;
+}
+
+.facebook__signup-form_input-date_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.facebook__signup-form span {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.facebook__signup-form_input-gender_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.facebook__signup-form_input-gender_container-radio {
+  width: 175px;
+  display: flex;
+  margin: 0 6px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10px;
+  border: 1px solid #a5a5a5;
+  border-radius: 5px;
+}
+
+.facebook__signup-form_input-gender_container-radio label {
+  font-size: 12px;
+}
+
+.facebook__signup-form_input-gender_container-radio input {
+  width: 15px;
+}
+
+.facebook__signup-form_input-gender_container-radio_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook__signup-form_input-gender {
+  margin: 5px 0;
+}
+
+.facebook__signup-form_input-gender_container span {
+  margin-left: 20px;
+}
+
+.facebook__signup-form_p {
+  font-size: 10px;
+  width: 405px;
+}
+
+.facebook__signup-form_p p {
+  margin: 10px 0;
+}
+
+.facebook__signup-form_p a {
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.facebook__signup-form_p a:hover {
+  text-decoration: underline;
+}
+
+.facebook__signup-form_signup {
+  background-color: #318b1f;
+  border-radius: 7px;
+
+  font-size: 17px;
+  line-height: 32px;
+
+  margin-top: 10px;
+  width: 150px;
+
+  transition: all 0.3 ease-in;
+}
+
+.facebook__signup-form_signup:hover {
+  background-color: #3da928;
+}
+
+.facebook__signup-form_input-date_container span,
+.facebook__signup-form_input-gender_container span {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.error__input-container:has(.facebook__signup-form_input[type="date"])
+  .facebook__input-err_icon {
+  top: -20%;
+}
+
+.error__input-container:has(.facebook__signup-form_input-gender[type="radio"])
+  .facebook__input-err_icon {
+  top: -35%;
+  right: 1px;
+}
+
+.signup__err-description {
+  background: rgb(194, 0, 0);
+  color: #fff;
+  padding: 15px 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  position: absolute;
+  left: -20%;
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+
+.signup__err-description_surName {
+  left: 52%;
+  transform: translateY(50px);
+}
+
+.signup__err-description_email {
+  transform: translateY(-85px);
+  left: -60.5%;
+}
+
+.signup__err-description_triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(194, 0, 0);
+  position: absolute;
+  right: -15.5px;
+  top: 44%;
+  transform: rotate(90deg);
+}
+
+.signup__err-description_surName .signup__err-description_triangle {
+  transform: rotate(0);
+  left: 10px;
+  top: -20%;
+}
+
+.signup__err-description_email .signup__err-description_triangle {
+  right: -15px;
+}

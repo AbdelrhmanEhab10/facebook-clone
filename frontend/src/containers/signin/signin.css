@@ -1,0 +1,122 @@
+.facebook__registration {
+    min-width: 500px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook__signin-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facebook__signin-content_declaration img {
+    height: 106px;
+    margin: -26px;
+}
+
+.facebook__signin-content_declaration h5 {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-top: .5rem;
+    margin-left: .5rem;
+
+    width: 78%;
+    margin-right: 1.6rem;
+}
+
+.facebook__signin-content-account {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.facebook__signin-content_account-form {
+    width: auto;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.facebook__signin-content_account-form_login {
+    background-color: var(--base-color);
+
+    padding: 14px 16px;
+    margin: 10px 0;
+    margin-bottom: 40px;
+    width: 330px;
+}
+
+.facebook__signin-content_account-form_login:hover {
+    background-color: #1965c8;
+}
+
+.facebook__signin-content_account-form a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.facebook__signin-content_acoount-form_create {
+    background-color: var(--green-color);
+
+    font-size: 17px;
+    line-height: 48px;
+
+    padding: 0 16px;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.facebook__signin-content_acoount-form_create:hover {
+    background-color: #36a020;
+}
+
+.facebook__signin-content-account_createpage a {
+    color: var(--black-color);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.facebook__signin-content-account_createpage {
+    font-size: 14px;
+    margin-top: 1.2rem;
+}
+
+.facebook__error-content {
+    color: rgb(194, 0, 0);
+    margin: 10px 0;
+}
+
+@media screen and (max-width:992px) {
+    .section-padding {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-padding {
+        padding: 4rem 0rem;
+    }
+
+    .facebook__signin-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facebook__signin-content_declaration h5 {
+        width: 100%;
+    }
+
+    .facebook__signin-content-account {
+        margin-top: .5rem;
+    }
+
+}

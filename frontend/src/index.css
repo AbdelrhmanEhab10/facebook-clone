@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: var(--facebook-font);
+}
+
+p{
+  color: var(--paragraph-color);
+}
+
+:root {
+  --facebook-font: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  --black-color:#000;
+  --link-color:#1877f2;
+  --white-color:#fff;
+  --base-color: #1877f2;
+  --green-color: #42b72a;
+}

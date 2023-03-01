@@ -1,0 +1,12 @@
+.facebook_button {
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transition: all .1s ease-in-out;
+
+    cursor: pointer;
+}

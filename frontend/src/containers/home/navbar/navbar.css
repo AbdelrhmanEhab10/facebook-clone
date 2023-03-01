@@ -1,0 +1,81 @@
+.facebook__navbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+
+  padding: .5rem .7rem .5rem .1rem;
+}
+
+.navbar__left-list-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.facebook__logo {
+  width: 17%;
+}
+
+.facebook__logo img {
+  width: 100%;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar__search input {
+  border: none;
+  font-size: 15px;
+}
+
+.navbar__search input:focus {
+  outline-color: transparent;
+  font-size: 15px;
+}
+
+.navbar__search-output {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.navbar__main-list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar__right-list-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__main-list-items .list-item svg.active{
+  position: relative;
+  color:#1876f2 !important;
+}
+
+.navbar__main-list-items .list-item svg.active::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-35%,5px);
+  background-color: #1876f2;
+}

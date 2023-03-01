@@ -1,0 +1,69 @@
+.facebook__signin-content_account-form_input {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+
+    font-size: 17px;
+
+    margin: 10px 0;
+    padding: 14px 16px;
+    width: 330px;
+    height: 22px;
+
+    border: 1px solid #a5a5a5;
+}
+
+.facebook__signin-content_account-form_input:focus{
+    outline: none;
+    border:1px solid var(--base-color);
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.facebook__input-err {
+    border-color: rgb(194, 0, 0) !important;
+}
+
+.facebook__input-err:focus{
+    border-color: rgb(194, 0, 0);
+}
+
+.facebook__input-err_icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+.error__input-container {
+    position: relative;
+}
+
+.err-container{
+    position: relative;
+}
+
+.facebook__signup-overlayform .facebook__input-err_text {
+    position: absolute;
+    right: -100px;
+    top: 8px;
+    background-color: rgb(255, 61, 61);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    max-width: 75px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.error__input-container:has(.facebook__signup-form_input-gender[type="radio"]) .facebook__input-err_text {
+    right: -110px;
+    top: -27px;
+    width: 75px;
+}
+
+.facebook__signup-overlayform .facebook__input-err_text.show{
+    opacity: 1;
+}
